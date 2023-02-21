@@ -17,6 +17,34 @@
 body{
   font-size: 16px;
 }
+.btn-scroll-top{
+  width: 2.3em;
+  height: 2.3em;
+  background-color: #b87fca;
+  border-radius: .4em;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3em;
+  cursor: pointer;
+  box-shadow: 0 0 .4em .1em rgba(0, 0, 0,.3);
+  position: fixed;
+  z-index: 100;
+  bottom: 1em;
+  right: 1em;
+  transition: all .2s ease-in-out;
+
+  pointer-events: none;
+  opacity: 0;
+}
+.btn-scroll-top:hover{
+  transform: scale(1.1);
+}
+.btn-scroll-top.active{
+  opacity: 1;
+  pointer-events: auto;
+}
 .max-width{
   width: 100%;
   height: 100%;
