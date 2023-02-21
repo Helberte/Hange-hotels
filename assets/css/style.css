@@ -1,4 +1,8 @@
+@charset "UTF-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
 
 *{
   font-family: 'Roboto', sans-serif;
@@ -170,18 +174,24 @@ body{
 }
 .main-footer .main-nav-footer{
   width: 100%;
-  height: 2.5em;
+  padding: .2em 0;
   background-color: rgb(48,61,76);
   text-align: center;
+  font-size: 1.5em;
+  color: white;
 }
 .main-footer p{
   text-align: center;
   margin-top: 1.2em;
 }
+.main-footer .main-nav-footer i{
+  margin: 0 .2em;
+  cursor: pointer;
+}
 
 /* Responsivo */
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 50em){
   .header-main .max-width{
     flex-direction: row;
     align-items: center;
@@ -255,7 +265,7 @@ body{
   }
 }
 
-@media screen and (min-width:1000px){
+@media screen and (min-width:62.5em){
   .section-main{
     height: 38em;
     justify-content: flex-end;
@@ -275,7 +285,7 @@ body{
     font-size: 1.3em;
   }
 }
-@media screen and (min-width:1174px){
+@media screen and (min-width:73.375em){
   .section-main{
     height: 48em;
   }
